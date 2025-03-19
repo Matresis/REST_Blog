@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Blog</title>
+</head>
+<body>
+
+	<header>
+		<h1>Webovy Blog</h1>
+	</header>
+
+	<div class="container">
+		<div id="blog"></div>
+
+		<div id="newPostForm">
+			<h2>Pridat novy blogovy prispevek</h2>
+			<label for="title">
+				<input type="text" id="title" placeholder="Nadpis" required>
+			</label>
+			<label for="content">
+				<textarea id="content" placeholder="Text příspěvku" rows="5" required></textarea>
+			</label>
+			<button onclick="createPost()">Vytvorit prispevek</button>
+		</div>
+		<div class="logOut">
+			<button onclick="logout()">Odhlásit se</button>
+		</div>
+
+		<button id="show-docs" onclick="getDocs()">Show API Documentation</button>
+
+	</div>
+
+</body>
+<script type="application/javascript" src="/js/script.js"></script>
+</html>
